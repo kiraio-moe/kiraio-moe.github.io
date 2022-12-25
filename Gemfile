@@ -23,7 +23,7 @@ group :jekyll_plugins do
     gem "jekyll-paginate-v2", "~> 3.0.0"
 #    gem "jekyll-polyglot", "~> 1.5.1" bug at Win platform
     gem "jekyll-redirect-from", "~> 0.16.0"
-    gem "jekyll-sass-converter", "~> 2.2.0"
+    gem "jekyll-sass-converter", "~> 3.0.0"
     gem "jekyll-seo-tag", "~> 2.8.0"
     gem "jekyll-sitemap", "~> 1.4.0"
 end

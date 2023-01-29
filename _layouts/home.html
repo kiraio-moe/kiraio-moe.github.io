@@ -1,7 +1,74 @@
 ---
-layout: default
-title: Home
 ---
 
-{% include top-nav.html %}
-<h1>{{ "Hello World!" | downcase }}</h1>
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js"> <![endif]-->
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" dir="{{ site.dir }}">
+    <head>
+        {% include meta-tags.html %} {% include styles.html %}
+        <link
+            rel="stylesheet"
+            href="{{ 'assets/css/home.css' |  relative_url }}"
+        />
+    </head>
+
+    <body>
+        <!--[if lt IE 7]>
+            <p>You are using an <em>outdated</em> browser. Please upgrade your browser to improve your experience.</p>
+        <![endif]-->
+        <div class="wrapper">
+            <div class="main-content">
+                {%- comment -%}Top Navigation{%- endcomment -%}
+                <nav class="top"></nav>
+                {%- comment -%}Sections{%- endcomment -%}
+                <div class="sticky-scroll vh" data-section-name="Assets">
+                    <div class="container">
+                        <h1 class="section-header text-center">
+                            ASSETS & RESOURCES [WIP]
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vitae quasi expedita, minima laboriosam eum, repellat
+                            nobis ex suscipit odit reiciendis sequi earum asperiores
+                            qui maiores harum quia tempore, eius laborum! Lorem,
+                            ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                            in magnam nobis natus sint pariatur ducimus, quasi ut
+                            vel, temporibus error voluptate. Unde deleniti dolores
+                            repellat reprehenderit voluptas accusantium enim?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sticky-scroll vh" data-section-name="Tools">
+                    <div class="container">
+                        <h1 class="section-header text-center">TOOLS [WIP]</h1>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Earum saepe nemo temporibus illo repellat esse
+                            iusto incidunt hic, ad vel maiores sapiente consequuntur
+                            quae accusamus cupiditate, aspernatur consequatur
+                            reiciendis. Debitis! Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Atque tempora nisi totam,
+                            amet temporibus dolor earum, sunt voluptatem, quia quasi
+                            culpa deleniti recusandae vitae dolore dolorem rem.
+                            Odio, tempore blanditiis! Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Deserunt doloribus
+                            perspiciatis sed voluptatem exercitationem sequi labore
+                            quod laborum blanditiis voluptates veniam fugiat cum
+                            doloremque, reprehenderit omnis neque earum iusto
+                            officiis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {%- if site.under_maintenance -%}
+                {%- include maintenance.html -%}
+            {%- endif -%}
+        </div>
+        {% include scripts.html %}
+    </body>
+</html>

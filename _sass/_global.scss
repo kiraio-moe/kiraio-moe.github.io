@@ -1,0 +1,51 @@
+html::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-selection {
+    color: $kiraio-black;
+    background-color: $kiraio-blue;
+}
+
+::selection {
+    color: $kiraio-black;
+    background-color: $kiraio-blue;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    background-color: $kiraio-dark-gray;
+    color: $kiraio-white;
+}
+
+/*== X-Large devices (large desktops, less than 1400px (xxl)) ==*/
+@media (min-width: 1200px) {
+
+}
+
+/*== Large devices (desktops, less than 1200px (xl)) ==*/
+@media (max-width: 1200px) {
+
+}
+
+/*== Minimum medium devices ==*/
+@media (min-width: 992px) {
+
+}
+
+/*== Medium devices (tablets, less than 992px (lg)) =*/
+@media (max-width: 992px) {
+
+}
+
+/*== Small devices (landscape phones, less than 768px (md)) ==*/
+@media (max-width: 768px) {
+
+}
+
+/*== X-Small devices (potrait phones, less than 576px (sm)) ==*/
+@media (max-width: 576px) {
+
+}

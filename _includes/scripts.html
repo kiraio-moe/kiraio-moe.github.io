@@ -1,43 +1,16 @@
-{%- if jekyll.environment == 'production' -%} {%- if site.google_analytics -%}
-<script
-    src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"
-    async
-    defer
-></script>
-<script
-    src="{{ 'assets/js/google-analytics.js' | relative_url }}"
-    async
-    defer
-></script>
+{%- if site.google_analytics -%}
+<script src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script src="{{ 'assets/js/google-analytics.js' | relative_url }}"></script>
 {%- endif -%}
 
-<script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-    async
-    defer
-></script>
-<script
-    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
-    integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-    async
-    defer
-></script>
-{%- endif -%} {%- if jekyll.environment == 'development' -%}
-<script
-    src="{{ 'assets/js/jquery-3.6.1.min.js' | relative_url }}"
-    async
-    defer
-></script>
-<script
-    src="{{ 'assets/js/bootstrap-5.2.3.bundle.min.js' | relative_url }}"
-    async
-    defer
-></script>
-{%- endif -%}
+{%- comment -%}Polyfill for older browser{%- endcomment -%}
+<!--[if lt IE 9]>
+<script src="{{ 'assets/js/html5shiv/html5shiv.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/html5shiv/html5shiv-printshiv.min.js' | relative_url }}"></script>
+<![endif]-->
 
-<script src="{{ 'assets/js/main.js' | relative_url }}" async defer></script>
+<script src="{{ 'assets/js/jquery/jquery.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/bootstrap/bootstrap.bundle.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/scrollify/jquery.scrollify.min.js' | relative_url }}"></script>
+
+<script src="{{ 'assets/js/main.js' | relative_url }}"></script>

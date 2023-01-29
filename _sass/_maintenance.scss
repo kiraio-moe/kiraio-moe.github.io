@@ -1,0 +1,34 @@
+@font-face {
+	font-family: "Bebas Neue";
+	src: url("../fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Generation Mono";
+	src: url("../fonts/Generation_Mono/Generation-Mono.otf") format("truetype");
+}
+
+@font-face {
+	font-family: "Space Mono Regular";
+	src: url("../fonts/Space_Mono/SpaceMono-Regular.ttf") format("truetype");
+}
+
+.maintenance-window {
+	position: fixed;
+	z-index: 999;
+	background-color: #000;
+
+	& h1, p {
+		color: #fff;
+	}
+
+	& h1 {
+		font-family: "Generation Mono", sans-serif;
+		font-size: 3rem;
+		letter-spacing: .2rem;
+	}
+
+	& p {
+		font-family: "Space Mono Regular", sans-serif;
+	}
+}

@@ -1,0 +1,82 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "kiraio",
+    "home_page_url": "https://kiraio-moe.github.io/",
+    "feed_url": "https://kiraio-moe.github.io/feed.json",
+    "description": "Unleash Your Creativity.",
+    "icon": "https://kiraio-moe.github.io/apple-touch-icon.png",
+    "favicon": "https://kiraio-moe.github.io/favicon.ico",
+    "expired": false,
+    
+    "author":  {
+        "name": "Bayu Satiyo",
+        "url": null,
+        "avatar": null
+    },
+    
+"items": [
+    
+        {
+            "id": "https://kiraio-moe.github.io/fruit/apple/",
+            "title": "Apple",
+            "summary": null,
+            "content_text": "An apple is a sweet, edible fruit produced by an apple tree.Apple trees are cultivated worldwide, and are the most widely grown species inthe genus Malus. The tree originated in Central Asia, where its wild ancestor,Malus sieversii, is still found today. Apples have been grown for thousands ofyears in Asia and Europe, and were brought to North America by Europeancolonists.",
+            "content_html": "<p>An apple is a sweet, edible fruit produced by an apple tree.</p><p>Apple trees are cultivated worldwide, and are the most widely grown species inthe genus Malus. The tree originated in Central Asia, where its wild ancestor,Malus sieversii, is still found today. Apples have been grown for thousands ofyears in Asia and Europe, and were brought to North America by Europeancolonists.</p>",
+            "url": "https://kiraio-moe.github.io/fruit/apple/",
+            
+            
+            
+            
+            
+            "date_published": "2022-12-04T00:00:00+07:00",
+            "date_modified": "2022-12-04T00:00:00+07:00",
+            
+                "author": "jill"
+            
+        },
+    
+        {
+            "id": "https://kiraio-moe.github.io/jekyll/welcome-to-jekyll/",
+            "title": "Welcome to Jekyll!",
+            "summary": null,
+            "content_text": "You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.Jekyll requires blog post files to be named according to the following format:YEAR-MONTH-DAY-title.MARKUPWhere YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and MARKUP is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.Jekyll also offers powerful support for code snippets:def print_hi(name)  puts \"Hi, #{name}\"endprint_hi('Tom')#=&gt; prints 'Hi, Tom' to STDOUT.Check out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk.",
+            "content_html": "<p>You’ll find this post in your <code class=\"language-plaintext highlighter-rouge\">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class=\"language-plaintext highlighter-rouge\">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p><p>Jekyll requires blog post files to be named according to the following format:</p><p><code class=\"language-plaintext highlighter-rouge\">YEAR-MONTH-DAY-title.MARKUP</code></p><p>Where <code class=\"language-plaintext highlighter-rouge\">YEAR</code> is a four-digit number, <code class=\"language-plaintext highlighter-rouge\">MONTH</code> and <code class=\"language-plaintext highlighter-rouge\">DAY</code> are both two-digit numbers, and <code class=\"language-plaintext highlighter-rouge\">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p><p>Jekyll also offers powerful support for code snippets:</p><figure class=\"highlight\"><pre><code class=\"language-ruby\" data-lang=\"ruby\"><span class=\"k\">def</span> <span class=\"nf\">print_hi</span><span class=\"p\">(</span><span class=\"nb\">name</span><span class=\"p\">)</span>  <span class=\"nb\">puts</span> <span class=\"s2\">\"Hi, </span><span class=\"si\">#{</span><span class=\"nb\">name</span><span class=\"si\">}</span><span class=\"s2\">\"</span><span class=\"k\">end</span><span class=\"n\">print_hi</span><span class=\"p\">(</span><span class=\"s1\">'Tom'</span><span class=\"p\">)</span><span class=\"c1\">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure><p>Check out the <a href=\"https://jekyllrb.com/docs/home\">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href=\"https://github.com/jekyll/jekyll\">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href=\"https://talk.jekyllrb.com/\">Jekyll Talk</a>.</p>",
+            "url": "https://kiraio-moe.github.io/jekyll/welcome-to-jekyll/",
+            
+            
+            
+            
+            
+            "date_published": "2022-11-28T22:44:07+07:00",
+            "date_modified": "2022-11-28T22:44:07+07:00",
+            
+                "author":  {
+                "name": "Bayu Satiyo",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
+            "id": "https://kiraio-moe.github.io/fruit/kiwifruit/",
+            "title": "Kiwifruit",
+            "summary": null,
+            "content_text": "Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edibleberry of several species of woody vines in the genus Actinidia.The most common cultivar group of kiwifruit is oval, about the size of a largehen’s egg (5–8 cm (2.0–3.1 in) in length and 4.5–5.5 cm (1.8–2.2 in) indiameter). It has a fibrous, dull greenish-brown skin and bright green orgolden flesh with rows of tiny, black, edible seeds. The fruit has a softtexture, with a sweet and unique flavor.",
+            "content_html": "<p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edibleberry of several species of woody vines in the genus Actinidia.</p><p>The most common cultivar group of kiwifruit is oval, about the size of a largehen’s egg (5–8 cm (2.0–3.1 in) in length and 4.5–5.5 cm (1.8–2.2 in) indiameter). It has a fibrous, dull greenish-brown skin and bright green orgolden flesh with rows of tiny, black, edible seeds. The fruit has a softtexture, with a sweet and unique flavor.</p>",
+            "url": "https://kiraio-moe.github.io/fruit/kiwifruit/",
+            
+            
+            
+            
+            
+            "date_published": "2022-11-04T00:00:00+07:00",
+            "date_modified": "2022-11-04T00:00:00+07:00",
+            
+                "author": "ted"
+            
+        }
+    
+    ]
+}

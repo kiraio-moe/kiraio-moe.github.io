@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://kiraio-moe.github.io/sitemap.xml

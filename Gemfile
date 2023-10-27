@@ -16,16 +16,18 @@ gem "jekyll", "~> 4.3.2"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
 #    gem "github-pages", "~> 227"
-    gem "jekyll-feed", "~> 0.17.0"
-    gem "jekyll-gist", "~> 1.5.0"
-    gem "jekyll-last-modified-at", "~> 1.3.0"
+    # gem "jekyll-feed", "~> 0.17.0"
+    # gem "jekyll-gist", "~> 1.5.0"
+    # gem "jekyll-last-modified-at", "~> 1.3.0"
 #    gem "jekyll-multiple-languages-plugin", "~> 1.8"
-    gem "jekyll-paginate-v2", "~> 3.0.0"
+    # gem "jekyll-paginate-v2", "~> 3.0.0"
 #    gem "jekyll-polyglot", "~> 1.5.1" bug at Win platform
     gem "jekyll-redirect-from", "~> 0.16.0"
     gem "jekyll-sass-converter", "~> 3.0.0"
     gem "jekyll-seo-tag", "~> 2.8.0"
     gem "jekyll-sitemap", "~> 1.4.0"
+    gem "jekyll-relative-links"
+    gem "webrick"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

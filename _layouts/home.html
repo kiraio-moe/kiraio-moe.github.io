@@ -6,7 +6,10 @@
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]> <html class="no-js"> <![endif]-->
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}" dir="{{ site.dir }}">
+<html
+    lang="{{ page.lang | default: site.lang | default: 'en' }}"
+    dir="{{ site.dir }}"
+>
     <head>
         {% include meta-tags.html %} {% include styles.html %}
         <link
@@ -14,61 +17,261 @@
             href="{{ 'assets/css/home.css' |  relative_url }}"
         />
     </head>
-
     <body>
         <!--[if lt IE 7]>
-            <p>You are using an <em>outdated</em> browser. Please upgrade your browser to improve your experience.</p>
+            <p>
+                You are using an <em>outdated</em> browser. Please upgrade your
+                browser to improve your experience.
+            </p>
         <![endif]-->
         <div class="wrapper">
             <div class="main-content">
-                {%- comment -%}Top Navigation{%- endcomment -%}
-                <nav class="top"></nav>
-                {%- comment -%}Sections{%- endcomment -%}
-                <div class="sticky-scroll vh" data-section-name="Assets">
-                    <div class="container">
-                        <h1 class="section-header text-center">
-                            ASSETS & RESOURCES [WIP]
-                        </h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Vitae quasi expedita, minima laboriosam eum, repellat
-                            nobis ex suscipit odit reiciendis sequi earum asperiores
-                            qui maiores harum quia tempore, eius laborum! Lorem,
-                            ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                            in magnam nobis natus sint pariatur ducimus, quasi ut
-                            vel, temporibus error voluptate. Unde deleniti dolores
-                            repellat reprehenderit voluptas accusantium enim?
-                        </p>
+                {%- comment -%}BEGIN Navigation{%- endcomment -%}
+                <nav
+                    class="navbar navbar-expand-md bg-body-tertiary navbar-dark pt-md-4 container-fluid"
+                >
+                    <!-- <div class="container-fluid"> -->
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="offcanvas offcanvas-end text-bg-dark"
+                        tabindex="-1"
+                        id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel"
+                    >
+                        <div class="offcanvas-header">
+                            <h5
+                                class="offcanvas-title"
+                                id="offcanvasNavbarLabel"
+                            >
+                                <a href="{{ '/' | relative_url }}"
+                                    >{{ site.title }}</a
+                                >
+                            </h5>
+                            <button
+                                type="button"
+                                class="btn-close btn-close-white"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul
+                                class="navbar-nav justify-content-end flex-grow-1 pe-5"
+                            >
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="{{ '/' | relative_url }}"
+                                        title="About Me"
+                                        >About Me</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        href="{{ '/blog' | relative_url }}"
+                                        >Blog</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </nav>
+                {%- comment -%}END Navigation{%- endcomment -%} {%- comment
+                -%}Sections{%- endcomment -%}
+                <div
+                    id="home-section"
+                    class="fixed-scroll vh home-section"
+                    data-section-name="Home"
+                >
+                    <div class="photo-container container">
+                        <div
+                            class="bio-photo magic-hover"
+                            data-tilt
+                            data-tilt-max="1"
+                            data-tilt-reset="false"
+                            data-tilt-speed="1200"
+                            data-tilt-reverse="true"
+                            data-tilt-perspective="100"
+                        >
+                            <img src="{{ 'assets/img/momotaro.jpg' | relative_url }}" alt="">
+                        </div>
+
+                        <!-- <div class="decoration d-flex">
+                            <img src="{{ 'assets/img/shapes/straight-line.svg' | relative_url }}">
+                            <img src="{{ 'assets/img/shapes/lines-bar.svg' | relative_url }}">
+                        </div> -->
+
+                        <!-- <div class="decoration scroll-down w-100 d-flex justify-content-center align-items-center">
+                            <img src="{{ 'assets/img/shapes/scroll-down.svg' | relative_url }}">
+                        </div> -->
+
+                        <!-- <div class="decoration curved-text">
+                            <p>return into void</p>
+                        </div> -->
+                    </div>
+
+                    <div class="container quick-intro-container">
+                        <div class="overview">
+                            <h1 class="author">{{ site.author.name }}</h1>
+                            <p class="occupation">
+                                Unity Game Programmer <br />
+                                Front-End Web Developer <br />
+                                Graphic Designer <br />
+                            </p>
+                        </div>
+
+                        <div class="sns d-flex">
+                            <div class="platform magic-hover">
+                                <a
+                                    href="https://facebook.com/{{ site.author.facebook }}"
+                                    target="_blank"
+                                    title="Facebook"
+                                >
+                                    <img
+                                        class="brand"
+                                        src="{{ 'assets/img/social-media/facebook.svg' | relative_url }}"
+                                        alt="Facebook"
+                                    />
+                                </a>
+                            </div>
+                            <div class="platform magic-hover">
+                                <a
+                                    href="https://instagram.com/{{ site.author.instagram }}"
+                                    target="_blank"
+                                    title="Instagram"
+                                >
+                                    <img
+                                        class="brand"
+                                        src="{{ 'assets/img/social-media/instagram.svg' | relative_url }}"
+                                        alt="Instagram"
+                                    />
+                                </a>
+                            </div>
+                            <div class="platform magic-hover">
+                                <a
+                                    href="https://twitter.com/{{ site.author.twitter }}"
+                                    target="_blank"
+                                    title="Twitter"
+                                >
+                                    <img
+                                        class="brand"
+                                        src="{{ 'assets/img/social-media/twitter.svg' | relative_url }}"
+                                        alt="Twitter"
+                                    />
+                                </a>
+                            </div>
+                            <div class="platform magic-hover">
+                                <a
+                                    href="https://github.com/{{ site.author.github }}"
+                                    target="_blank"
+                                    title="GitHub"
+                                >
+                                    <img
+                                        class="brand"
+                                        src="{{ 'assets/img/social-media/github.svg' | relative_url }}"
+                                        alt="GitHub"
+                                    />
+                                </a>
+                            </div>
+                            <div class="platform magic-hover">
+                                <a
+                                    href="https://deviantart.com/{{ site.author.deviantart }}"
+                                    target="_blank"
+                                    title="DeviantArt"
+                                >
+                                    <img
+                                        class="brand"
+                                        src="{{ 'assets/img/social-media/deviantart.svg' | relative_url }}"
+                                        alt="DeviantArt"
+                                    />
+                                </a>
+                            </div>
+                            <div class="platform magic-hover">
+                                <a
+                                    href="https://pixiv.net/en/{{ site.author.pixiv }}"
+                                    target="_blank"
+                                    title="pixiv"
+                                >
+                                    <img
+                                        class="brand"
+                                        src="{{ 'assets/img/social-media/pixiv.svg' | relative_url }}"
+                                        alt="pixiv"
+                                    />
+                                </a>
+                            </div>
+                            <div class="platform magic-hover">
+                                <a
+                                    href="https://youtube.com/{{ site.author.youtube }}"
+                                    target="_blank"
+                                    title="YouTube"
+                                >
+                                    <img
+                                        class="brand"
+                                        src="{{ 'assets/img/social-media/youtube.svg' | relative_url }}"
+                                        alt="YouTube"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div
+                            class="site-version d-flex justify-content-center align-items-center"
+                        >
+                            <img
+                                src="{{ 'assets/img/shapes/lines-bar.svg' | relative_url }}"
+                                alt=""
+                            />
+                            <p>version {{ site.version }}</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="sticky-scroll vh" data-section-name="Tools">
+                <div class="fixed-scroll vh home-section"
+                data-section-name="Game_Development">
                     <div class="container">
-                        <h1 class="section-header text-center">TOOLS [WIP]</h1>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Earum saepe nemo temporibus illo repellat esse
-                            iusto incidunt hic, ad vel maiores sapiente consequuntur
-                            quae accusamus cupiditate, aspernatur consequatur
-                            reiciendis. Debitis! Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Atque tempora nisi totam,
-                            amet temporibus dolor earum, sunt voluptatem, quia quasi
-                            culpa deleniti recusandae vitae dolore dolorem rem.
-                            Odio, tempore blanditiis! Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Deserunt doloribus
-                            perspiciatis sed voluptatem exercitationem sequi labore
-                            quod laborum blanditiis voluptates veniam fugiat cum
-                            doloremque, reprehenderit omnis neque earum iusto
-                            officiis.
-                        </p>
+
                     </div>
                 </div>
+
             </div>
 
-            {%- if site.under_maintenance -%}
-                {%- include maintenance.html -%}
+            {%- if site.under_maintenance -%} {%- include maintenance.html -%}
             {%- endif -%}
         </div>
         {% include scripts.html %}
+        <script type="text/javascript">
+            // Cursor Effect
+            magicMouseOptions = {
+                // "cursorOuter": "circle-basic",
+                "hoverEffect": "pointer-blur",
+                "hoverItemMove": false,
+                "defaultCursor": false,
+                "outerWidth": 25,
+                "outerHeight": 25
+            };
+            magicMouse(magicMouseOptions);
+
+            grainedOptions = {
+                "animate": true,
+                "patternWidth": 150,
+                "patternHeight": 150,
+                "grainOpacity": 0.05,
+                "grainDensity": 1,
+                "grainWidth": 1,
+                "grainHeight": 1
+            }
+            grained("#home-section", grainedOptions);
+        </script>
     </body>
 </html>

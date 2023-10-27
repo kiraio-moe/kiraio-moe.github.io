@@ -37,8 +37,8 @@ destination: ./public
 # include: [".htaccess"]
 # exclude:
 # keep_files: [".git", ".svn"]
-# encoding: "utf-8"
-# markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 # strict_front_matter : false
 ## Filtering Content
 # show_drafts : null
@@ -49,8 +49,7 @@ destination: ./public
 # whitelist : []
 # plugins : []
 ## Conversion
-# markdown : kramdown
-# highlighter : rouge
+markdown : kramdown
 # lsi : false
 # excerpt_separator : "\n\n"
 # incremental : false
@@ -84,28 +83,28 @@ defaults: # Front matter defaults
 #   strict_filters : false
 #   strict_variables : false
 ## Markdown Processors
-# kramdown:
-#   auto_ids : true
-#   entity_output : as_char
-#   toc_levels : [1, 2, 3, 4, 5, 6]
-#   smart_quotes : lsquo,rsquo,ldquo,rdquo
-#   input : GFM
-#   hard_wrap : false
-#   footnote_nr : 1
-#   show_warnings : false
+kramdown:
+    auto_ids : true
+    entity_output : as_char
+    toc_levels : [1, 2, 3, 4, 5, 6]
+    smart_quotes : lsquo,rsquo,ldquo,rdquo
+    input : GFM
+    syntax_highlighter: rouge
+    hard_wrap : false
+    footnote_nr : 1
+    show_warnings : false
 
+# Site
+title: kiraio
+description: >- # this means to ignore newlines until "baseurl:"
+    Unleash Your Creativity.
+logo: ""
 url: "https://kiraio-moe.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 date_format: "%b %-d, %Y"
 show_excerpts: false # set to true to show excerpts on the homepage
 # page_excerpts: false
-under_maintenance: true
-
-# Brand
-title: kiraio
-email: itsyuukunz@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-    Unleash Your Creativity.
-logo: ""
+under_maintenance: false
+version: 2.0.0
 #====================
 
 # Analytics
@@ -114,9 +113,16 @@ google_analytics:
 #====================
 
 # SNS
-facebook_username: kiraio.moe
-twitter_username: kiraio_moe
-github_username: kirao-moe
+author:
+    name: "Bayu Satiyo"
+    email: itsyuukunz@gmail.com
+    deviantart: kiraio
+    facebook: kiraio.moe
+    github: kiraio-moe
+    instagram: kiraio.moe
+    pixiv: kiraio
+    twitter: kiraio_moe
+    youtube: "@kiraio"
 
 #====================
 
@@ -124,11 +130,11 @@ github_username: kirao-moe
 # theme: minima
 plugins:
     #  - "github-pages"
-    - "jekyll-feed"
-    - "jekyll-gist"
-    - "jekyll-last-modified-at"
+    # - "jekyll-feed"
+    # - "jekyll-gist"
+    # - "jekyll-last-modified-at"
     #  - "jekyll-multiple-languages-plugin"
-    - "jekyll-paginate-v2"
+    # - "jekyll-paginate-v2"
     #  - "jekyll-polyglot" bug at Win platform
     - "jekyll-redirect-from"
     - "jekyll-sass-converter"
@@ -158,7 +164,7 @@ exclude:
     - vendor/ruby/
     - scripts/
     - logs/
-    - README.md
+    - ./*.md
 
 #====================
 

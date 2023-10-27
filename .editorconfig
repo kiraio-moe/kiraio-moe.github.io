@@ -13,3 +13,6 @@ trim_trailing_whitespace = true
 
 [*.{md,svg}]
 trim_trailing_whitespace = false
+
+[*.{json,yml,yaml}]
+indent_size = 2

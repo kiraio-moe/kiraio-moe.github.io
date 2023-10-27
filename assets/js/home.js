@@ -13,7 +13,7 @@ $(() => {
     });
 
     $.scrollify({
-        section: ".sticky-scroll",
+        section: ".fixed-scroll",
         sectionName: "section-name",
         easing: "easeOutExpo",
         interstitialSection: ".footer",
@@ -30,4 +30,24 @@ $(() => {
         afterResize: function () {},
         afterRender: function () {},
     });
+
+    // let curvedText = document.querySelector(".decoration.curved-text p");
+    // new CircleType(curvedText);
+    // anime({
+    //     targets: curvedText,
+    //     rotate: 360,
+    //     duration: 5000,
+    //     loop: true,
+    //     easing: "linear"
+    // });
+
+    // anime({
+    //     targets: ".decoration.scroll-down",
+    //     translateY: 10,
+    //     opacity: ["100%", "0%"],
+    //     endDelay: 200,
+    //     duration: 1500,
+    //     loop: true,
+    //     easing: "linear"
+    // });
 });
